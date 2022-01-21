@@ -1,12 +1,12 @@
-class AlcoholResponse {
-  AlcoholResponse({
+class AlcoholPopularResponse {
+  AlcoholPopularResponse({
     required this.drinks,
   });
-  late final List<DrinksAlcohol> drinks;
+  late final List<DrinksAlcoholPopular> drinks;
 
-  AlcoholResponse.fromJson(Map<String, dynamic> json) {
+  AlcoholPopularResponse.fromJson(Map<String, dynamic> json) {
     drinks = List.from(json['drinks'])
-        .map((e) => DrinksAlcohol.fromJson(e))
+        .map((e) => DrinksAlcoholPopular.fromJson(e))
         .toList();
   }
 
@@ -17,8 +17,8 @@ class AlcoholResponse {
   }
 }
 
-class DrinksAlcohol {
-  DrinksAlcohol({
+class DrinksAlcoholPopular {
+  DrinksAlcoholPopular({
     required this.strDrink,
     required this.strDrinkThumb,
     required this.idDrink,
@@ -27,7 +27,7 @@ class DrinksAlcohol {
   late final String strDrinkThumb;
   late final String idDrink;
 
-  DrinksAlcohol.fromJson(Map<String, dynamic> json) {
+  DrinksAlcoholPopular.fromJson(Map<String, dynamic> json) {
     strDrink = json['strDrink'];
     strDrinkThumb = json['strDrinkThumb'];
     idDrink = json['idDrink'];
