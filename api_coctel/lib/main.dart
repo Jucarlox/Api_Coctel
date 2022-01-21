@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:api_coctel/pages/alcohol.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -19,11 +18,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomePage(),
-        '/alcohol': (context) => const (),
-        '/films': (context) => const FilmsPage(),
-        '/people': (context) => const PeoplePage(),
-        '/film-detail': (context) => const FilmsDetailPage(),
+        '/': (context) => const AlcoholPage(),
+        '/alcohol': (context) => const AlcoholPage(),
+        //'/films': (context) => const FilmsPage(),
+        //'/people': (context) => const PeoplePage(),
+        //'/film-detail': (context) => const FilmsDetailPage(),
       },
     );
   }

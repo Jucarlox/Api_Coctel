@@ -1,4 +1,4 @@
-import 'package:api_coctel/pages/popular.dart';
+import 'package:api_coctel/pages/alcohol.dart';
 import 'package:api_coctel/pages/sin_alcohol.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AlcoholPage extends StatefulWidget {
-  const AlcoholPage({Key? key}) : super(key: key);
+class PopularAlcoholPage extends StatefulWidget {
+  const PopularAlcoholPage({Key? key}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -43,11 +43,11 @@ class AlcoholPage extends StatefulWidget {
   // always marked "final".
 
   @override
-  State<AlcoholPage> createState() => _MyHomePageState();
+  State<PopularAlcoholPage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<AlcoholPage> {
-  int _selectedIndex = 0;
+class _MyHomePageState extends State<PopularAlcoholPage> {
+  int _selectedIndex = 2;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
